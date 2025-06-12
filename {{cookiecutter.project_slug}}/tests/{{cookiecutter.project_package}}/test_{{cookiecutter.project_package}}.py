@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Tests for `{{ cookiecutter.project_slug }}` package."""
+"""Tests for `{{ cookiecutter.project_slug }}.{{ cookiecutter.project_package }}` """
 
 {% if cookiecutter.use_pytest == 'y' -%}
 import pytest
@@ -8,7 +8,7 @@ import pytest
 import unittest
 {%- endif %}
 
-from {{ cookiecutter.project_slug }} import {{ cookiecutter.package_name }}
+from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_package }}
 {%- if cookiecutter.use_pytest == 'y' %}
 
 
