@@ -30,8 +30,8 @@ dependencies = [
     "click"
 {% endif %}
 {% if cookiecutter.command_line_interface|lower == 'jmullan.cmd' -%}
-    "jmullan_cmd@git+https://github.com/jmullan/jmullan_cmd",
-    "jmullan_logging@git+https://github.com/jmullan/jmullan_logging",
+    "jmullan.cmd@git+https://github.com/jmullan/jmullan.cmd",
+    "jmullan.logging@git+https://github.com/jmullan/jmullan.logging",
 {% endif %}
 ]
 
